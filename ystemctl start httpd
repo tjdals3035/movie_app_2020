@@ -1,0 +1,16 @@
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled; vendor preset: disabled)
+  Drop-In: /usr/lib/systemd/system/httpd.service.d
+           └─php-fpm.conf
+   Active: inactive (dead) since Tue 2020-03-17 09:23:39 EDT; 39min ago
+     Docs: man:httpd.service(8)
+  Process: 991 ExecStart=/usr/sbin/httpd $OPTIONS -DFOREGROUND (code=exited, status=0/SUCCESS)
+ Main PID: 991 (code=exited, status=0/SUCCESS)
+   Status: "Total requests: 4; Idle/Busy workers 99/1;Requests/sec: 0.0333; Bytes served/sec: 2.1KB/sec"
+
+ 3월 17 09:21:17 localhost.localdomain systemd[1]: Starting The Apache HTTP Server...
+ 3월 17 09:21:18 localhost.localdomain httpd[991]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+ 3월 17 09:21:18 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+ 3월 17 09:21:19 localhost.localdomain httpd[991]: Server configured, listening on: port 80
+ 3월 17 09:23:28 localhost.localdomain systemd[1]: Stopping The Apache HTTP Server...
+ 3월 17 09:23:39 localhost.localdomain systemd[1]: Stopped The Apache HTTP Server.
